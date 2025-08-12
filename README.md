@@ -2,8 +2,7 @@
 
 # 🧮 Modern Calculator Web App
 
-<img src="C:\Users\karth\OneDrive\Pictures\Screenshots\Screenshot 2025-08-12 211729.png" alt="Calculator Preview" width="400px"/>
-
+<img src="images/calculator-preview.png" alt="Calculator Preview" width="400px"/>
 *A sleek, responsive calculator with dark theme and smooth animations*
 
 [![Demo](https://img.shields.io/badge/Live_Demo-FF7139?style=for-the-badge&logo=firefox-browser&logoColor=white)](https://your-deployed-app.link)
