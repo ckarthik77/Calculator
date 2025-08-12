@@ -2,7 +2,7 @@
 
 # 🧮 Modern Calculator Web App
 
-<img src="screenshot.png" alt="Calculator Preview" width="400px"/>
+<img src="C:\Users\karth\OneDrive\Pictures\Screenshots\Screenshot 2025-08-12 211729.png" alt="Calculator Preview" width="400px"/>
 
 *A sleek, responsive calculator with dark theme and smooth animations*
 
