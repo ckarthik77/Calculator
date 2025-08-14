@@ -4,31 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="index.css" />
-    <title>CKarthik77 Calculator</title>
+    <title>CKarthik77 Advanced Calculator</title>
 </head>
 <body>
     <div class="container">
         <div class="calculator">
-            <div class="display">
-                <input type="text" id="inputBox" placeholder="0" readonly/>
+            <!-- Header -->
+            <div class="header">
+                <h2><i class="fas fa-calculator"></i> Advanced Calculator</h2>
+                <div class="theme-toggle">
+                    <button id="themeToggle" class="theme-btn">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
             </div>
+
+            <!-- Display -->
+            <div class="display">
+                <div class="history" id="history"></div>
+                <input type="text" id="inputBox" placeholder="0" readonly/>
+                <div class="memory-indicator" id="memoryIndicator">M</div>
+            </div>
+
+            <!-- Scientific Mode Toggle -->
+            <div class="mode-toggle">
+                <button id="scientificToggle" class="mode-btn">
+                    <i class="fas fa-flask"></i> Scientific
+                </button>
+            </div>
+
+            <!-- Memory Controls -->
+            <div class="memory-controls">
+                <button class="memory-btn" id="mc">MC</button>
+                <button class="memory-btn" id="mr">MR</button>
+                <button class="memory-btn" id="mplus">M+</button>
+                <button class="memory-btn" id="mminus">M-</button>
+                <button class="memory-btn" id="ms">MS</button>
+            </div>
+
+            <!-- Scientific Functions (Hidden by default) -->
+            <div class="scientific-functions" id="scientificFunctions">
+                <button class="button scientific" id="sin">sin</button>
+                <button class="button scientific" id="cos">cos</button>
+                <button class="button scientific" id="tan">tan</button>
+                <button class="button scientific" id="log">log</button>
+                <button class="button scientific" id="ln">ln</button>
+                <button class="button scientific" id="sqrt">√</button>
+                <button class="button scientific" id="power">x²</button>
+                <button class="button scientific" id="pi">π</button>
+            </div>
+
+            <!-- Main Buttons -->
             <div class="buttons">
                 <button class="button operator" id="ac">AC</button>
                 <button class="button operator" id="del">DEL</button>
                 <button class="button operator" id="percent">%</button>
-                <button class="button operator" id="divide">/</button>
+                <button class="button operator" id="divide">÷</button>
                 
                 <button class="button" id="7">7</button>
                 <button class="button" id="8">8</button>
                 <button class="button" id="9">9</button>
-                <button class="button operator" id="multiply">*</button>
+                <button class="button operator" id="multiply">×</button>
                 
                 <button class="button" id="4">4</button>
                 <button class="button" id="5">5</button>
                 <button class="button" id="6">6</button>
-                <button class="button operator" id="subtract">-</button>
+                <button class="button operator" id="subtract">−</button>
                 
                 <button class="button" id="1">1</button>
                 <button class="button" id="2">2</button>
@@ -40,8 +84,20 @@
                 <button class="button" id="decimal">.</button>
                 <button class="button equalBtn" id="equals">=</button>
             </div>
+
+            <!-- History Panel -->
+            <div class="history-panel" id="historyPanel">
+                <div class="history-header">
+                    <h3>History</h3>
+                    <button id="clearHistory" class="clear-btn">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+                <div class="history-list" id="historyList"></div>
+            </div>
         </div>
     </div>
+
     <script src="index.js"></script>
 </body>
 </html>
